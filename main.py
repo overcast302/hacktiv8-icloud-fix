@@ -14,7 +14,7 @@ from pymobiledevice3.lockdown import create_using_usbmux
 from pymobiledevice3.services.afc import AfcService
 from pymobiledevice3.services.diagnostics import DiagnosticsService
 
-BACKEND_URL = 'http://overcast302.dev/hacktiv8/icinfo.php'
+BACKEND_URL = 'https://overcast302.dev/hacktiv8/icinfo.php'
 
 # pyinstaller resource path fix
 def resource_path(name):
