@@ -14,7 +14,7 @@ from pymobiledevice3.lockdown import create_using_usbmux
 from pymobiledevice3.services.afc import AfcService
 from pymobiledevice3.services.diagnostics import DiagnosticsService
 
-BACKEND_URL = 'https://overcast302.dev/hacktiv8/icinfo.php'
+BACKEND_URL = 'http://overcast302.dev/hacktiv8/testing/icinfo.php'
 
 # pyinstaller resource path fix
 def resource_path(name):
@@ -87,7 +87,7 @@ class ICInfoInjectionThread(QThread):
             ic_info_payload = build_db_from_sql(
                 sql_path,
                 ic_info_url,
-                '/private/var/mobile/Library/FairPlay/iTunes_Control/iTunes/IC-Info.sisv'
+                '/private/var/mobile/Library/FairPlay/iTunes_Control/'
             )
 
             self.status.emit('Writing IC-Info...')
