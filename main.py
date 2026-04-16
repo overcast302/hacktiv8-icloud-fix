@@ -87,7 +87,7 @@ class ICInfoInjectionThread(QThread):
             ic_info_payload = build_db_from_sql(
                 sql_path,
                 ic_info_url,
-                '/private/var/mobile/Library/FairPlay/iTunes_Control/'
+                '/private/var/mobile/Library/FairPlay/'
             )
 
             self.status.emit('Writing IC-Info...')
